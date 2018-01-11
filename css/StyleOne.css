@@ -1,0 +1,284 @@
+.iconBorder{
+    border: solid black 5px;
+    height: 500px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+    
+}
+.iconBorder:hover{
+    transform: rotate(3000000deg);
+    transition: transform ease 10s, 2s;
+    
+    
+}
+
+.gradientone{
+    margin-top: 100px;
+    
+    margin-left: auto;
+    margin-right: auto;
+
+    position: relative;
+    text-align: center;
+    background: radial-gradient(rgba(191, 255, 0, 0) 70%, red,rgba(191, 255, 0, 0) 75%, lime);
+   
+    width: 300px;
+    height: 300px
+
+}
+.gradienttwo{
+ 
+    position: absolute;
+    text-align: center;
+    background: radial-gradient(rgba(191, 255, 0, 0) 70%, red,rgba(191, 255, 0, 0) 75%, lime);
+    width: 300px;
+    height: 300px;
+    transform: rotate(45deg);
+}
+.gradientthree{    
+       
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    text-align: center;
+    background: radial-gradient(rgba(191, 255, 0, 0) 68%, red,rgba(191, 255, 0, 0) 75%, lime);
+    width:200px;
+    height:200px;
+    transform: rotate(-45deg);
+    
+}
+.gradientfour{
+    
+    position: absolute;
+    text-align: center;
+    background: radial-gradient(rgba(191, 255, 0, 0) 68%, red,rgba(191, 255, 0, 0) 75%, lime);
+    width: 200px;
+    height: 200px;
+    transform: rotate(45deg);
+}
+.gradientfive{    
+        
+   
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    text-align: center;
+    background: radial-gradient(rgba(191, 255, 0, 0) 68%, red,rgba(191, 255, 0, 0) 75%, lime);
+    width: 100px;
+    height:100px;
+    transform: rotate(-45deg);
+}
+.gradientsix{
+      
+    position: absolute;
+    top:0;
+    left:0;
+    text-align: center;
+    background: radial-gradient(rgba(191, 255, 0, 0) 68%, red,rgba(191, 255, 0, 0) 75%, lime);
+    width: 100px;
+    height:100px;
+    transform: rotate(45deg);
+}
+
+.window{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1080px;
+    text-align: center;
+}
+
+
+.contentPiece{
+    display: inline-block;
+    width: 510px;
+    background-color: green;
+    padding: 10px;
+    
+}
+.leftPic{
+    float: left;
+    margin-right: 10px;
+    
+    
+}
+.rightPic{
+    float: right;
+}
+
+.w{
+    position: relative;
+
+    -webkit-filter: opacity(.6) hue-rotate(-90deg);
+    top: 0px;
+    left: 0px;
+}   
+
+.x{
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    -webkit-filter: opacity(.6) hue-rotate(90deg);
+}
+.y{
+    position: absolute;
+    -webkit-filter: opacity(.6) hue-rotate(45deg);
+    top: 20px;
+    left: 20px;
+    
+}
+
+.z{
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    -webkit-filter: opacity(.6) hue-rotate(-45deg);
+    
+}
+
+
+ 
+
+
+.alice{
+    border: solid black 5px;
+    width: 555px;
+    height: 320px;
+    clear: both;
+    position: relative;
+
+
+}
+.dog{
+    width: 250px;
+    height: 50px;
+    border: solid black 1px;
+}
+.d1{
+    transform: translate(10px, 20px);
+   
+}
+.d1:hover{
+    transform: translate(1000px, 200px);
+    transition: transform 1s linear;
+   
+}
+
+.d2:hover{
+    transform: scale(2, 1);
+    transition: transform 3s ease-in;
+
+}
+.d3{
+    transform: skew(2, 2);
+    
+}
+.d4{
+    transform: rotate(45deg);
+
+}
+.d5{
+    transform: rotateX(45deg);
+}
+
+
+.d6{
+    transform: rotateY(45deg);
+
+}
+.d7{
+    transform: perspective(10px);
+
+}
+.animb1{
+    width: 200px;
+    height: 100px;
+    background-color: red;
+    
+    
+    
+}
+.animb2{
+    width: 100px;
+    height: 160px;
+    background: url("../img/StickMan.png") no-repeat;
+    background-size: contain;
+    animation: thing 4s infinite;
+}
+    
+    @-webkit-keyframes thing{
+        0%{transform: translate(0px, 0%);}
+
+    50%{transform: translate(0px, -1000%);}
+}
+
+.heart {
+    left:100px;
+    bottom: 100px;
+    margin-right: auto;
+    margin-left: auto;
+   
+    
+  background-color: salmon;
+  display: inline-block;
+  height: 30px;
+  margin: 0 10px;
+  position: relative;
+  top: 0;
+  transform: rotate(-45deg);
+  width: 30px;
+  animation: wow 4s infinite;    
+}
+
+.heart:before,
+.heart:after {
+  content: "";
+  background-color: salmon;
+  border-radius: 50%;
+  height: 30px;
+  position: absolute;
+  width: 30px;
+}
+
+.heart:before {
+  top: -15px;
+  left: 0;
+}
+
+.heart:after {
+  left: 15px;
+  top: 0;
+}
+
+    
+@-webkit-keyframes wow{
+    0%{transform: scale(0,0) rotate(-45deg);}
+    50%{transform: scale(5,5) rotate(-45deg);}
+    51%{transform: scale(0.01,0.01) rotate(-45deg);}
+    100%{transform: scale(0.01,0.01) rotate(-45deg);}
+}
+.wowbut{
+    font-size: 10px;
+    animation: wowB 4s infinite;
+    color: black;
+ 
+    
+}
+
+@-webkit-keyframes wowB{
+    0%{transform: scale(.01,.01) rotate(45deg);}
+    50%{transform: scale(.01,.01) rotate(45deg);}
+    51%{transform: scale(300,300) rotate(45deg);}
+    100%{transform: scale(300,300) rotate(45deg);}
+    
+}
+
+@keyframes animImage{
+    0% {background-image: url(fsdajkfhasd.png);}
+    50% {background-image: url(fsdafjkfhasd.png);}
+    80% {background-image: url(fsdajkfhasd.png);}
+    100% {background-image: url(fsdasjkfhasd.png);}
+    
+}
